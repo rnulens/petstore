@@ -239,6 +239,13 @@ paths:
           description: "Zone temperature"
           schema:
             $ref: "#/definitions/TemperatueZoneStatus"
+          examples:
+            application/json:
+              id: 38
+              name: "raf"
+              inputPosition: 1
+              outputPosition: 2
+              zone: "test_zone"
       x-swagger-router-controller: "Environment"
   /temperature/{zoneId}/heater:
     get:

@@ -97,11 +97,11 @@ exports.getZoneTemperature = function(zoneId) {
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = {
-  "name" : "name",
-  "id" : "id",
-  "units" : "fahrenheit",
-  "value" : 5.962133916683182,
-  "timestamp" : "2000-01-23T04:56:07.000+00:00"
+  "id" : 38,
+  "name" : "raf",
+  "inputPosition" : 1,
+  "outputPosition" : 2,
+  "zone" : "test_zone"
 };
     if (Object.keys(examples).length > 0) {
       resolve(examples[Object.keys(examples)[0]]);
